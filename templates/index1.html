@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Agrisol Technologies</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='C:\Users\deepu\Downloads\crop recommendation\static\style.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png">
+
+    <style>
+
+        *{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(219, 145, 33, 0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img
+{
+    max-height: 100%;
+	max-width: 100%;
+	width:150px;
+	height:150px;
+	background-size: cover;
+
+	float: left;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px 12px;
+    word-spacing: 14px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #f7cc0e;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background: #f7cc0e;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #f7cc0e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+
+}
+.text-box h3{
+    font-size: 30px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 19px;
+    color: #f7cc0e;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#f7cc0e;
+    border: 1px solid #f7cc0e;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #242412;
+    background : #010101;
+    transition: 1s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5fd9d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddffb9ec;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #3f81fb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+    </style>
+
+
+</head>
+<body>
+    <section class="header">
+
+        <nav>
+
+            <a href="index1.html"><img src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"></a>
+            <div class="nav-links">
+            <ul>
+                
+                <li><a href="/homepage">HOME</a></li>
+                <li><a href="/services">SERVICES</a></li>
+                <li><a href="/predictpage">GET-RECOMMENDATION</a></li>
+                
+            
+            </ul>
+            </div>
+
+        </nav>
+    <div class="text-box">
+        <h1>AgriSol Technologies</h1><br>
+        <p>Welcome to Agrisol, India's leading AgriTech company dedicated to revolutionizing agriculture through technology. At Agrisol, we provide cutting-edge solutions to farmers across India, empowering them with the tools and knowledge they need to thrive in today's agricultural landscape.<br> Our flagship service offers free personalized crop recommendations, utilizing advanced data analytics and machine learning algorithms to optimize crop yield and resource utilization. </p>
+        <a href="/services" class="hero-btn">Visit us to know More</a>
+
+    </div>
+    </section>
+</body>
+</html>
